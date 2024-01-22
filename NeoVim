@@ -1,2 +1,23 @@
 Ролик по настройке NeoVim
 https://www.youtube.com/watch?v=4PzSNN45tcA
+
+Шрифты консоли и не только
+https://www.nerdfonts.com/
+Установка Nerdfonts
+
+1.) Download a Nerd Font
+2.) Unzip and copy to ~/.fonts
+3.) Run the command fc-cache -fv to manually rebuild the font cache
+
+Установка свежей версии Neovim
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+chmod u+x nvim.appimage
+./nvim.appimage
+./nvim.appimage --appimage-extract
+./squashfs-root/AppRun --version
+
+# Optional: exposing nvim globally.
+sudo mv squashfs-root /
+sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
+nvim
+
