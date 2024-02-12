@@ -1,0 +1,38 @@
+Сервер TimeWeb
+IP: 217.25.94.80
+root	b4H#*zP?gaZq8M   
+ruslan  Ballista2024-
+
+Заметки об установки ПО на сервер
+gnupg2
+zsh
+Oh My Zsh
+RVM
+Ruby 3.3.0
+NeoVim в конфигурации LasyVim для этого необходимо установить следующее:
+  NeoVim > 0.90                     https://github.com/neovim/neovim/blob/master/INSTALL.md 
+  Git >= 2.19.0                     уже установлен
+  NerdFont                          https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip
+                                    Установка шрифтов
+                                    mkdir ~/.fonts 
+                                    Копируем шрифт в созданную папку
+                                    sudo apt install fontconfig
+                                    fc-cache -f -v 
+  lazygit                           htts://github.com/jesseduffield/lazzygit?tab=readme-ov-file#ubuntu
+  a C compiler for nvim-treesitter https://github.com/nvim-treesitter/nvim-treesitter#requirements
+  for telescope.nvim  
+    live grep: ripgrep              sudo apt install ripgrep 
+    find files: fd                  sudo apt install fd-find
+
+Установить npm                      sudo apt install npm
+Установить yarn                     sudo npm install --global yarn 
+Обновить node до 14 или выше        sudo apt remove nodejs
+                                    curl -fsSL https://deb.nodesource.com/setup_21.x | sudo -E bash - &&\
+                                    sudo apt install -y nodejs 
+                                    Если появляется ошибка, то выполнить sudo apt autoremove
+
+Далее ставим Postgresql 16          postgresql.org/download/linux/ubuntu
+
+
+
+
