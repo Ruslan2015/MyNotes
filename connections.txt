@@ -30,6 +30,7 @@ NeoVim в конфигурации LasyVim для этого необходим�
                                     curl -fsSL https://deb.nodesource.com/setup_21.x | sudo -E bash - &&\
                                     sudo apt install -y nodejs 
                                     Если появляется ошибка, то выполнить sudo apt autoremove
+Настраиваем соединение с github     https://habr.com/ru/companies/yandex_praktikum/articles/700708/
 
 Далее ставим Postgresql 16          postgresql.org/download/linux/ubuntu
 
